@@ -1,10 +1,10 @@
 ```js script
 import { html } from '@open-wc/demoing-storybook';
-import '../bbva-login.js';
+import '../bbva-register.js';
 
 export default {
   title: 'BbvaLogin',
-  component: 'bbva-login',
+  component: 'bbva-register',
   options: { selectedPanel: "storybookjs/knobs/panel" },
 };
 ```
@@ -24,16 +24,16 @@ A component for...
 ### Installation
 
 ```bash
-yarn add bbva-login
+yarn add bbva-register
 ```
 
 ```js
-import 'bbva-login/bbva-login.js';
+import 'bbva-register/bbva-register.js';
 ```
 
 ```js preview-story
 export const Simple = () => html`
-  <bbva-login></bbva-login>
+  <bbva-register></bbva-register>
 `;
 ```
 
@@ -43,6 +43,6 @@ export const Simple = () => html`
 
 ```js preview-story
 export const CustomTitle = () => html`
-  <bbva-login title="Hello World"></bbva-login>
+  <bbva-register title="Hello World"></bbva-register>
 `;
 ```

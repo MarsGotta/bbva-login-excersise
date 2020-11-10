@@ -2,7 +2,7 @@
   "version": 2,
   "tags": [
     {
-      "name": "bbva-register",
+      "name": "bbva-alert",
       "description": "A component with a title and an action counter",
       "properties": [
         {
@@ -22,7 +22,7 @@
       "slots": [],
       "cssProperties": [
         {
-          "name": "--bbva-register-text-color",
+          "name": "--bbva-alert-text-color",
           "description": "Main Text Color",
           "type": "Color"
         }

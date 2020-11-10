@@ -1,19 +1,19 @@
-# \<bbva-login>
+# \<bbva-register>
 
 This webcomponent follows the [open-wc](https://github.com/open-wc/open-wc) recommendation.
 
 ## Installation
 ```bash
-npm i bbva-login
+npm i bbva-register
 ```
 
 ## Usage
 ```html
 <script type="module">
-  import 'bbva-login/bbva-login.js';
+  import 'bbva-register/bbva-register.js';
 </script>
 
-<bbva-login></bbva-login>
+<bbva-register></bbva-register>
 ```
 
 ## Linting with ESLint, Prettier, and Types

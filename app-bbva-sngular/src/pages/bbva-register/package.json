@@ -1,8 +1,8 @@
 {
   "name": "bbva-register",
   "version": "0.0.0",
-  "description": "Webcomponent bbva-login following open-wc recommendations",
-  "author": "bbva-login",
+  "description": "Webcomponent bbva-register following open-wc recommendations",
+  "author": "bbva-register",
   "license": "MIT",
   "main": "index.js",
   "module": "index.js",

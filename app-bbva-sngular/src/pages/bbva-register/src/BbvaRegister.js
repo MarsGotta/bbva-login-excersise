@@ -67,41 +67,41 @@ export class BbvaRegister extends PageViewElement {
 
   render() {
     return html`
-      <main class="bbva-login">
+      <main class="bbva-register">
         <bbva-icon
-          class="bbva-login-icon"
+          class="bbva-register-icon"
           .icon=${prop('icon', this.configUI)}
         ></bbva-icon>
         <bbva-input
-          class="bbva-login-input"
+          class="bbva-register-input"
           type="text"
           .placeholder=${prop('firstName', this.configText)}
           .value=${prop('firstName', this.configUser)}
           @on-input=${({ detail }) => this.inputChange(detail, 'firstName')}
         ></bbva-input>
         <bbva-input
-          class="bbva-login-input"
+          class="bbva-register-input"
           type="text"
           .placeholder=${prop('lastName', this.configText)}
           .value=${prop('lastName', this.configUser)}
           @on-input=${({ detail }) => this.inputChange(detail, 'lastName')}
         ></bbva-input>
         <bbva-input
-          class="bbva-login-input"
+          class="bbva-register-input"
           type="email"
           .placeholder=${prop('email', this.configText)}
           .value=${prop('email', this.configUser)}
           @on-input=${({ detail }) => this.inputChange(detail, 'email')}
         ></bbva-input>
         <bbva-input
-          class="bbva-login-input"
+          class="bbva-register-input"
           type="password"
           .placeholder=${prop('password', this.configText)}
           .value=${prop('password', this.configUser)}
           @on-input=${({ detail }) => this.inputChange(detail, 'password')}
         ></bbva-input>
         <bbva-button
-          class="bbva-login-button"
+          class="bbva-register-button"
           .text=${prop('register', this.configText)}
           @click=${this.registerClick}
         ></bbva-button>
