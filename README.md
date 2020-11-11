@@ -1,7 +1,7 @@
 # bbva-login-excersise
 
 ## Demo
-(Github Page)[https://app-bbva-sngular.github.io/]
+Github Page: https://app-bbva-sngular.github.io/
 
 ## Open-wc Starter App
 
