@@ -78,29 +78,31 @@ export class BbvaLogin extends PageViewElement {
   render() {
     return html`
       <main class="bbva-login">
-        <bbva-icon
-          class="bbva-login-icon"
-          .icon=${prop('icon', this.configUI)}
-        ></bbva-icon>
-        <bbva-input
-          class="bbva-login-input"
-          type="email"
-          .placeholder=${prop('email', this.configText)}
-          .value=${prop('email', this.configUser)}
-          @on-input=${this.emailChange}
-        ></bbva-input>
-        <bbva-input
-          class="bbva-login-input"
-          type="password"
-          .placeholder=${prop('password', this.configText)}
-          .value=${prop('password', this.configUser)}
-          @on-input=${this.passwordChange}
-        ></bbva-input>
-        <bbva-button
-          class="bbva-login-button"
-          .text=${prop('login', this.configText)}
-          @click=${this.loginClick}
-        ></bbva-button>
+        <form>
+          <bbva-icon
+            class="bbva-login-icon"
+            .icon=${prop('icon', this.configUI)}
+          ></bbva-icon>
+          <bbva-input
+            class="bbva-login-input"
+            type="email"
+            .placeholder=${prop('email', this.configText)}
+            .value=${prop('email', this.configUser)}
+            @on-input=${this.emailChange}
+          ></bbva-input>
+          <bbva-input
+            class="bbva-login-input"
+            type="password"
+            .placeholder=${prop('password', this.configText)}
+            .value=${prop('password', this.configUser)}
+            @on-input=${this.passwordChange}
+          ></bbva-input>
+          <bbva-button
+            class="bbva-login-button"
+            .text=${prop('login', this.configText)}
+            @click=${this.loginClick}
+          ></bbva-button>
+        </form>
         <p>
           Puedes registrarte
           <a

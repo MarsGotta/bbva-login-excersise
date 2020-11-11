@@ -3,30 +3,13 @@ import { html, fixture, expect } from '@open-wc/testing';
 import '../bbva-alert.js';
 
 describe('BbvaAlert', () => {
-  it('has a default title "Hey there" and counter 5', async () => {
+
+  it('can override the message via attribute', async () => {
     const el = await fixture(html`
-      <bbva-alert></bbva-alert>
+      <bbva-alert message="attribute message"></bbva-alert>
     `);
 
-    expect(el.title).to.equal('Hey there');
-    expect(el.counter).to.equal(5);
-  });
-
-  it('increases the counter on button click', async () => {
-    const el = await fixture(html`
-      <bbva-alert></bbva-alert>
-    `);
-    el.shadowRoot.querySelector('button').click();
-
-    expect(el.counter).to.equal(6);
-  });
-
-  it('can override the title via attribute', async () => {
-    const el = await fixture(html`
-      <bbva-alert title="attribute title"></bbva-alert>
-    `);
-
-    expect(el.title).to.equal('attribute title');
+    expect(el.message).to.equal('attribute message');
   });
 
   it('passes the a11y audit', async () => {

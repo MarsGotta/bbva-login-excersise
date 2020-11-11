@@ -33,13 +33,7 @@ export class BbvaAlert extends ScopedElementsMixin(LitElement) {
       'bbva-icon': BbvaIcon,
     };
   }
-
-  constructor() {
-    super();
-    this.title = 'Hey there';
-    this.counter = 5;
-  }
-
+  
   handleClose() {
     this.dispatchEvent(
       new CustomEvent('on-close', {

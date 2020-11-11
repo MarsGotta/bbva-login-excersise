@@ -31,7 +31,7 @@ export class BbvaButton extends LitElement {
 
   constructor() {
     super();
-    this.text = '';
+    this.text = 'Button';
   }
 
   __click({ target }) {

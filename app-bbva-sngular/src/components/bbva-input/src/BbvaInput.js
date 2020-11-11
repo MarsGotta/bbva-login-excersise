@@ -26,6 +26,7 @@ export class BbvaInput extends LitElement {
       value: { type: String },
       placeholder: { type: String },
       type: { type: String },
+      ariaLabel: { type: String },
     };
   }
 
@@ -34,6 +35,7 @@ export class BbvaInput extends LitElement {
     this.type = '';
     this.value = '';
     this.placeholder = '';
+    this.ariaLabel = '';
   }
 
   handlerInput({ target }) {
@@ -49,12 +51,14 @@ export class BbvaInput extends LitElement {
   }
 
   render() {
+    const ariaLabel = prop('placeholder', this) || prop('ariaLabel', this);
     return html`
       <input
         tab-index="0"
         .type=${prop('type', this)}
         .placeholder=${prop('placeholder', this)}
         .value=${prop('value', this)}
+        aria-label=${ariaLabel}
         @input=${this.handlerInput}
       />
     `;
