@@ -5,19 +5,13 @@ import '../bbva-dashboard.js';
 export default {
   title: 'BbvaDashboard',
   component: 'bbva-dashboard',
-  options: { selectedPanel: "storybookjs/knobs/panel" },
+  options: { selectedPanel: 'storybookjs/knobs/panel' },
 };
 ```
 
 # BbvaDashboard
 
-A component for...
-
-## Features:
-
-- a
-- b
-- ...
+A dashboard page for app-bbva-sngular application
 
 ## How to use
 
@@ -32,17 +26,5 @@ import 'bbva-dashboard/bbva-dashboard.js';
 ```
 
 ```js preview-story
-export const Simple = () => html`
-  <bbva-dashboard></bbva-dashboard>
-`;
-```
-
-## Variations
-
-###### Custom Title
-
-```js preview-story
-export const CustomTitle = () => html`
-  <bbva-dashboard title="Hello World"></bbva-dashboard>
-`;
+export const Simple = () => html` <bbva-dashboard></bbva-dashboard> `;
 ```

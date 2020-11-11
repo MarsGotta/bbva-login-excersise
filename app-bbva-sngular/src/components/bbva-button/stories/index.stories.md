@@ -5,19 +5,13 @@ import '../bbva-button.js';
 export default {
   title: 'BbvaButton',
   component: 'bbva-button',
-  options: { selectedPanel: "storybookjs/knobs/panel" },
+  options: { selectedPanel: 'storybookjs/knobs/panel' },
 };
 ```
 
 # BbvaButton
 
-A component for...
-
-## Features:
-
-- a
-- b
-- ...
+A button component for app-bbva-sngular application
 
 ## How to use
 
@@ -32,9 +26,7 @@ import 'bbva-button/bbva-button.js';
 ```
 
 ```js preview-story
-export const Simple = () => html`
-  <bbva-button></bbva-button>
-`;
+export const Simple = () => html` <bbva-button></bbva-button> `;
 ```
 
 ## Variations
@@ -43,6 +35,6 @@ export const Simple = () => html`
 
 ```js preview-story
 export const CustomTitle = () => html`
-  <bbva-button title="Hello World"></bbva-button>
+  <bbva-button text="Hello World"></bbva-button>
 `;
 ```

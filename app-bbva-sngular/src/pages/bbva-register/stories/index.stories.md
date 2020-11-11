@@ -5,19 +5,13 @@ import '../bbva-register.js';
 export default {
   title: 'BbvaLogin',
   component: 'bbva-register',
-  options: { selectedPanel: "storybookjs/knobs/panel" },
+  options: { selectedPanel: 'storybookjs/knobs/panel' },
 };
 ```
 
 # BbvaLogin
 
-A component for...
-
-## Features:
-
-- a
-- b
-- ...
+A login page for app-bbva-sngular application
 
 ## How to use
 
@@ -32,17 +26,5 @@ import 'bbva-register/bbva-register.js';
 ```
 
 ```js preview-story
-export const Simple = () => html`
-  <bbva-register></bbva-register>
-`;
-```
-
-## Variations
-
-###### Custom Title
-
-```js preview-story
-export const CustomTitle = () => html`
-  <bbva-register title="Hello World"></bbva-register>
-`;
+export const Simple = () => html` <bbva-register></bbva-register> `;
 ```

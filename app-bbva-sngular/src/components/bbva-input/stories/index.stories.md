@@ -5,19 +5,13 @@ import '../bbva-input.js';
 export default {
   title: 'BbvaInput',
   component: 'bbva-input',
-  options: { selectedPanel: "storybookjs/knobs/panel" },
+  options: { selectedPanel: 'storybookjs/knobs/panel' },
 };
 ```
 
 # BbvaInput
 
-A component for...
-
-## Features:
-
-- a
-- b
-- ...
+A input component for app-bbva-sngular application
 
 ## How to use
 
@@ -33,7 +27,11 @@ import 'bbva-input/bbva-input.js';
 
 ```js preview-story
 export const Simple = () => html`
-  <bbva-input></bbva-input>
+  <bbva-input
+    value="Este es el value"
+    type="text"
+    placeholder="Un placeholder"
+  ></bbva-input>
 `;
 ```
 

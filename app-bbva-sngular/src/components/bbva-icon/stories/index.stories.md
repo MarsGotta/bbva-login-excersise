@@ -5,19 +5,13 @@ import '../bbva-icon.js';
 export default {
   title: 'BbvaIcon',
   component: 'bbva-icon',
-  options: { selectedPanel: "storybookjs/knobs/panel" },
+  options: { selectedPanel: 'storybookjs/knobs/panel' },
 };
 ```
 
 # BbvaIcon
 
-A component for...
-
-## Features:
-
-- a
-- b
-- ...
+A icon component for app-bbva-sngular application
 
 ## How to use
 
@@ -32,9 +26,7 @@ import 'bbva-icon/bbva-icon.js';
 ```
 
 ```js preview-story
-export const Simple = () => html`
-  <bbva-icon></bbva-icon>
-`;
+export const Simple = () => html` <bbva-icon icon="caplock"></bbva-icon> `;
 ```
 
 ## Variations
@@ -42,7 +34,5 @@ export const Simple = () => html`
 ###### Custom Title
 
 ```js preview-story
-export const CustomTitle = () => html`
-  <bbva-icon title="Hello World"></bbva-icon>
-`;
+export const CustomTitle = () => html` <bbva-icon icon="caplock"></bbva-icon> `;
 ```

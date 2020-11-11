@@ -5,19 +5,13 @@ import '../bbva-alert.js';
 export default {
   title: 'BbvaAlert',
   component: 'bbva-alert',
-  options: { selectedPanel: "storybookjs/knobs/panel" },
+  options: { selectedPanel: 'storybookjs/knobs/panel' },
 };
 ```
 
 # BbvaAlert
 
-A component for...
-
-## Features:
-
-- a
-- b
-- ...
+This component show an alert
 
 ## How to use
 
@@ -33,7 +27,7 @@ import 'bbva-alert/bbva-alert.js';
 
 ```js preview-story
 export const Simple = () => html`
-  <bbva-alert></bbva-alert>
+  <bbva-alert message="esto es un mensaje de alerta"></bbva-alert>
 `;
 ```
 

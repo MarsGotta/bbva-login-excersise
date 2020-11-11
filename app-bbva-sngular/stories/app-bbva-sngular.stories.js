@@ -6,4 +6,4 @@ export default {
   title: 'app-bbva-sngular',
 };
 
-export const App = () => html` <app-bbva-sngular></app-bbva-sngular> `;
+export const App = () => html`<app-bbva-sngular></app-bbva-sngular> `;

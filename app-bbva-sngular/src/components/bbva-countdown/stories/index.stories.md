@@ -5,19 +5,13 @@ import '../bbva-countdown.js';
 export default {
   title: 'BbvaCountdown',
   component: 'bbva-countdown',
-  options: { selectedPanel: "storybookjs/knobs/panel" },
+  options: { selectedPanel: 'storybookjs/knobs/panel' },
 };
 ```
 
 # BbvaCountdown
 
-A component for...
-
-## Features:
-
-- a
-- b
-- ...
+A countdown component for app-bbva-application
 
 ## How to use
 
@@ -32,17 +26,5 @@ import 'bbva-countdown/bbva-countdown.js';
 ```
 
 ```js preview-story
-export const Simple = () => html`
-  <bbva-countdown></bbva-countdown>
-`;
-```
-
-## Variations
-
-###### Custom Title
-
-```js preview-story
-export const CustomTitle = () => html`
-  <bbva-countdown title="Hello World"></bbva-countdown>
-`;
+export const Simple = () => html` <bbva-countdown></bbva-countdown> `;
 ```
